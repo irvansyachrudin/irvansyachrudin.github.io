@@ -1,0 +1,103 @@
+html {
+    position: relative;
+}
+
+body {
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+.jumbotron{
+    /* background-image: url('../img/about.jpg'); */
+    background-image: url('../img/cool-background.png');
+    min-height: 400px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    color: #eaeaea;
+    overflow: hidden;
+}
+
+.jumbotron h1, .jumbotron p {
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.jumbotron img {
+    width: 200px;
+    height: 200px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+hr {
+    width: 250px;
+    border-top: 3px solid #666;
+}
+
+section {
+    min-height: 600px;
+}
+
+.portfolio {
+    background-color: #eee;
+    padding-top: 30px;
+}
+
+.portfolio .col-lg-4 {
+    padding: 20px;
+    opacity: 0;
+}
+
+.pKiri, .pKanan {
+    opacity: 0;
+    transform: translate(-50px, 0) rotate(15deg);
+    transition: 1s;
+}
+
+.pKanan{
+    transform: translate(50px,0) rotate(-15deg);
+}
+
+.pKiri.pMuncul, .pKanan.pMuncul{
+opacity: 1;
+transform: translate(0,0)
+}
+
+.contact {
+    min-height: 800px;
+    padding-top: 30px;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 100px;
+    background-color: #aaa;
+    padding-top: 20px;
+}
+
+footer p {
+    color: #000;
+    font-size: 1em;
+
+}
+#about{
+    padding: 70px 0 0;
+    margin: -60px 0 0;
+}
+#portfolio{
+    padding: 70px 0 0;
+    margin: -60px 0 0;
+}
+
+#portfolio .img-thumbnail{
+    height: 20;
+}
+
+#contact{
+    padding: 70px 0 0;
+    margin: -60px 0 0;
+}
